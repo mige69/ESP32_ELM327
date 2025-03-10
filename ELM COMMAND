@@ -9,6 +9,7 @@ ATIB10 bauderate 10400
 ATIB96 bauderade 9600
 ATIB48 bauderade 4800
 ATMODU checksum modulo 100 or 256 send ATMODU100 checksum modulo 100 send ATMODU256 checksum modulo 256
+ATPPS configure init fast first impulse time
 
 
 
