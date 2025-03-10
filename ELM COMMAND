@@ -1,3 +1,5 @@
 Command Supported
 ATZ reset ESP32
+ATI version ESP32_ELM327
+
 
