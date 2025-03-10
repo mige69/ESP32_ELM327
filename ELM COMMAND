@@ -2,6 +2,9 @@ Command Supported
 ATZ reset ESP32
 ATI version ESP32_ELM327
 ATWS reset software
+ATSW Time Interval Frame Send keep alive send ATSW 00 to FF slice 20ms the delay 0 to 3 seconde max
+
+
 
 
 
