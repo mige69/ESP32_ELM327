@@ -5,6 +5,10 @@ ATWS reset software
 ATSW Time Interval Frame Send keep alive send ATSW 00 to FF slice 20ms the delay 0 to 3 seconde max
 ATWM send frame keep alive ecu for suzuki bike ATWM 8012F1013E
 ATH 0 or 1 headers off on 0 = off 1 = on send ATH0 or ATH1
+ATIB10 bauderate 10400
+ATIB96 bauderade 9600
+ATIB48 bauderade 4800
+
 
 
 
