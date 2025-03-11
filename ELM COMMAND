@@ -103,6 +103,25 @@ send 81   You don't have to rewrite everything ATSH8012F181
 init 70ms low and 120ms high
 specific checksum
 
+-AT not implementing at this time
+
+-ATE not implementing at this time
+
+-ATS not implementing at this time
+
+-ATL not implementing at this time
+
+-ATM not implementing at this time
+
+-ATDPN not implementing at this time
+
+-AT@1 not implementing at this time
+
+-ATAT not implementing at this time
+
+-ATW not implementing at this time
+
+
 
 
 
