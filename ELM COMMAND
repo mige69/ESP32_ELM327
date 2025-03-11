@@ -70,6 +70,17 @@ send ATPP1AOFF response RAW DATA(ATPP1AOFF OK>)
 check send ATPPS response RAW DATA(1A OFF 25 ms 1B ON 637 ms OK>)
 send ATPP1BOFF response RAW DATA(ATPP1BOFF OK>)
 check send ATPPS response RAW DATA(1A OFF 25 ms 1B OFF 25 ms OK>)
+exemple for init Honda bike
+1A Low for 70ms
+1B High for 120ms
+send ATPP1AON  response RAW DATA(ATPP1AON OK>)
+send ATPP1BON response RAW DATA(ATPP1BON OK>)
+70 ms 70 ÷ 2.5 = 28 in decimal conversion 1C in hex
+send ATPPSV1A1C response RAW DATA(ATPPSV1A1C OK>)
+check send ATPPS response RAW DATA(1A ON 70 ms 1B ON 0 ms OK>)
+120 ms 120 ÷ 2.5 = 48 in decimal conversion 30 in hex
+send ATPPSV1B30 response RAW DATA(ATPPSV1B30 OK>)
+check ATPPS response RAW DATA(1A ON 70 ms 1B ON 120 ms OK>)
 
 -ATIIA specific adress suzuki bike sen ATTIA12 (80 12 F1013E)
 -ATSH Specific address to wake up the ECU suzuki bike ATSH8112F1 after send 81 In mind you don't need to retype everything 
