@@ -93,6 +93,7 @@ check ATPPS response RAW DATA(1A ON 70 ms 1B ON 120 ms OK>)
 
 -ATIIA specific adress suzuki bike sen ATTIA12 (80 12 F1013E)
 adress 12
+the normal adress is 30
 
 -ATFI send adress 81
 
