@@ -1,9 +1,14 @@
 Command Supported
 -ATZ reset ESP32
+
 -ATI version ESP32_ELM327
+
 -ATWS reset software
+
 -ATSW Time Interval Frame Send keep alive send ATSW 00 to FF slice 20ms the delay 0 to 3 seconde max
+
 -ATWM send frame keep alive ecu for suzuki bike ATWM 8012F1013E
+
 -ATH 0 or 1 headers off on 0 = off 1 = on send ATH0 or ATH1 H0 and H1
  [ Headers off or on ]
  These commands control whether or not the
@@ -21,12 +26,19 @@ Command Supported
  the CAN CRC code, nor the special J1850 IFR bytes
  (which some protocols use to acknowledge receipt of a
  message)
+
 -ATIB10 bauderate 10400
+
 -ATIB96 bauderade 9600
+
 -ATIB48 bauderade 4800
+
 -ATMODU checksum modulo 100 or 256 send ATMODU100 checksum modulo 100 send ATMODU256 checksum modulo 256
+
 -ATPPS non-standard protocol parameter send ATPPS response 1A or 1B ON or OFF time in ms
 if 1A and 1B is OFF init fast first impulse time
+send ATPPS response RAW DATA(1A OFF 25 ms 1B OFF 25 ms OK>)
+
 -ATPP 
 Non-standard ECU clock protocol weak up
 command protocol 5 fast initiation
