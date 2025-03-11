@@ -51,15 +51,25 @@ send ATPP1BOFF passive time is close protocol standard
 when you want to change the time
 send ATPPS response RAW DATA(1A OFF 25 ms 1B OFF 25 ms OK>)
 after
-change 1A active time init
+ready 1A active time init
 send ATPP1AON response RAW DATA(ATPP1AON OK>)
 if you want to check the change
 send ATPPS response RAW DATA(1A ON 0 ms 1B OFF 25 ms OK>)
-change 1B passive time init
+ready 1B passive time init
 send ATPP1BON response RAW DATA(ATPP1BON OK>)
 if you want to check the change
 send ATPPS response RAW DATA(1A ON 0 ms 1B ON 0 ms OK>)
-
+if you change the time
+ATPPSV1AXX      XX (00 to FF) HEX value
+send ATPPSV1AFF response RAW DATA(ATPPSV1AFF OK>) FF hex = 255 decimal 255 x 2.5 = 637.5 rounded 637
+check send ATPPS response RAW DATA(1A ON 637 ms 1B ON 0 ms OK>)
+send ATPPSV1BFF response RAW DATA(ATPPSV1BFF OK>) FF hex = 255 decimal 255 x 2.5 = 637.5 rounded 637
+check send ATPPS response RAW DATA(1A ON 637 ms 1B ON 637 ms OK>)
+to return to the initial settings
+send ATPP1AOFF response RAW DATA(ATPP1AOFF OK>)
+check send ATPPS response RAW DATA(1A OFF 25 ms 1B ON 637 ms OK>)
+send ATPP1BOFF response RAW DATA(ATPP1BOFF OK>)
+check send ATPPS response RAW DATA(1A OFF 25 ms 1B OFF 25 ms OK>)
 
 -ATIIA specific adress suzuki bike sen ATTIA12 (80 12 F1013E)
 -ATSH Specific address to wake up the ECU suzuki bike ATSH8112F1 after send 81 In mind you don't need to retype everything 
