@@ -32,9 +32,9 @@ command protocol 5 fast initiation
 1A active time setting = value x 2.5msec
 1B passive time setting = value x 2.5mses
 send ATPP1AON active time is ready
-send ATPP1AOFF active time is close
+send ATPP1AOFF active time is close protocol standard
 send ATPP1BON passive time is ready
-send ATPP1BOFF passive time is close
+send ATPP1BOFF passive time is close protocol standard
 -ATPPS configure init fast first impulse time
 -ATIIA specific adress suzuki bike sen ATTIA12 (80 12 F1013E)
 -ATSH Specific address to wake up the ECU suzuki bike ATSH8112F1 after send 81 In mind you don't need to retype everything 
