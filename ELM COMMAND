@@ -6,6 +6,13 @@ Command Supported
 -ATWS reset software
 
 -ATSW Time Interval Frame Send keep alive send ATSW 00 to FF slice 20ms the delay 0 to 3 seconde max
+28 decimal 1C in hex 
+28 x 20 = 560 ms
+send ATSW1C responce RAW DATA(ATSW1C 560ms OK>)
+560 ms Delay between sending two frames keep alive Between the ECU and the ESP32
+the delay between 0 to 5 second
+the nominal value is 3 second
+150 x 20 = 3000 ms 150 in decimal 96 in hex
 
 -ATWM send frame keep alive ecu for suzuki bike ATWM 8012F1013E
 
