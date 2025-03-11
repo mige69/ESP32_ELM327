@@ -1,9 +1,11 @@
 -ATZ reset ESP32
+reset hardware
 
 -ATI version ESP32_ELM327
 send ATI responce RAW DATA(ESP32_ELM327 OK>)
 
 -ATWS reset software
+send ATI responce RAW DATA(ESP32_ELM327 OK>)
 
 -ATSW Time Interval Frame Send keep alive send ATSW 00 to FF slice 20ms the delay 0 to 3 seconde max
 28 decimal 1C in hex 
