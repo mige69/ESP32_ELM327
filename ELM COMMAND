@@ -1,18 +1,34 @@
 Command Supported
-ATZ reset ESP32
-ATI version ESP32_ELM327
-ATWS reset software
-ATSW Time Interval Frame Send keep alive send ATSW 00 to FF slice 20ms the delay 0 to 3 seconde max
-ATWM send frame keep alive ecu for suzuki bike ATWM 8012F1013E
-ATH 0 or 1 headers off on 0 = off 1 = on send ATH0 or ATH1
-ATIB10 bauderate 10400
-ATIB96 bauderade 9600
-ATIB48 bauderade 4800
-ATMODU checksum modulo 100 or 256 send ATMODU100 checksum modulo 100 send ATMODU256 checksum modulo 256
-ATPPS configure init fast first impulse time
-ATIIA specific adress suzuki bike sen ATTIA12 (80 12 F1013E)
-ATSH Specific address to wake up the ECU suzuki bike ATSH8112F1 after send 81 In mind you don't need to retype everything 
-ATPSH special protocol Honda bike special init en chechsum
+-ATZ reset ESP32
+-ATI version ESP32_ELM327
+-ATWS reset software
+-ATSW Time Interval Frame Send keep alive send ATSW 00 to FF slice 20ms the delay 0 to 3 seconde max
+-ATWM send frame keep alive ecu for suzuki bike ATWM 8012F1013E
+-ATH 0 or 1 headers off on 0 = off 1 = on send ATH0 or ATH1 H0 and H1
+ [ Headers off or on ]
+ These commands control whether or not the
+ additional (header) bytes of information are shown in
+ the responses from the vehicle. These are not
+ normally shown by the ELM327, but may be of interest
+ (especially if you receive multiple responses and wish
+ to determine what modules they were from).
+ Turning the headers on (with AT H1) actually
+ shows more than just the header bytes – you will see
+ the complete message as transmitted, including the
+ check-digits and PCI bytes, and possibly the CAN data
+ length code (DLC) if it has been enabled with PP 29 or
+ AT D1. The current version of this IC does not display
+ the CAN CRC code, nor the special J1850 IFR bytes
+ (which some protocols use to acknowledge receipt of a
+ message)
+-ATIB10 bauderate 10400
+-ATIB96 bauderade 9600
+-ATIB48 bauderade 4800
+-ATMODU checksum modulo 100 or 256 send ATMODU100 checksum modulo 100 send ATMODU256 checksum modulo 256
+-ATPPS configure init fast first impulse time
+-ATIIA specific adress suzuki bike sen ATTIA12 (80 12 F1013E)
+-ATSH Specific address to wake up the ECU suzuki bike ATSH8112F1 after send 81 In mind you don't need to retype everything 
+-ATPSH special protocol Honda bike special init en chechsum
 
 
 
