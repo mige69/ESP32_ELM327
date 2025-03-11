@@ -83,7 +83,13 @@ send ATPPSV1B30 response RAW DATA(ATPPSV1B30 OK>)
 check ATPPS response RAW DATA(1A ON 70 ms 1B ON 120 ms OK>)
 
 -ATIIA specific adress suzuki bike sen ATTIA12 (80 12 F1013E)
+
 -ATSH Specific address to wake up the ECU suzuki bike ATSH8112F1 after send 81 In mind you don't need to retype everything 
+in mind that you won't have to retype
+for the init 
+send ATSH8112F1  response RAW DATA(ATSH8012F1 OK>)
+send 81   You don't have to rewrite everything ATSH8012F181
+
 -ATPSH special protocol Honda bike special init en chechsum
 
 
