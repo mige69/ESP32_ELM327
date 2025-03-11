@@ -92,6 +92,7 @@ send ATPPSV1B30 response RAW DATA(ATPPSV1B30 OK>)
 check ATPPS response RAW DATA(1A ON 70 ms 1B ON 120 ms OK>)
 
 -ATIIA specific adress suzuki bike sen ATTIA12 (80 12 F1013E)
+adress 12
 
 -ATFI send adress 81
 
