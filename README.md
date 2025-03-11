@@ -9,5 +9,7 @@ Apk file to android phone for suzuki bike work with ESP32_ELM327 (file work with
 
 folder eagle schematic
 
+https://www.youtube.com/watch?v=ZsCw8m0fg5I
+
 
 
