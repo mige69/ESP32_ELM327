@@ -93,6 +93,8 @@ send ATSH8112F1  response RAW DATA(ATSH8012F1 OK>)
 send 81   You don't have to rewrite everything ATSH8012F181
 
 -ATPSH special protocol Honda bike special init en chechsum
+init 70ms low and 120ms high
+specific checksum
 
 
 
